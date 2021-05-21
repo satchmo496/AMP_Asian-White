@@ -1,0 +1,58 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/amp/qualtrics/qamp.js'], function(APIConstructor, ampExtension){
+	
+
+		var API = new APIConstructor();
+		
+		
+		return ampExtension({
+			primeCats :  [
+				{
+					nameForFeedback : 'Asian people',  //Will be used in the user feedback 
+					nameForLogging : 'Asian people', //Will be used in the logging
+					//An array of all media objects for this category.
+					mediaArray : [
+					    {image : 'AsF1.bmp'}, 
+						{image : 'AsF2.bmp'}, 
+						{image : 'AsF3.bmp'}, 
+						{image : 'AsF4.bmp'}, 
+						{image : 'AsF5.bmp'}, 
+						{image : 'AsM1.bmp'}, 
+						{image : 'AsM2.bmp'}, 
+						{image : 'AsM3.bmp'}, 
+						{image : 'AsM4.bmp'}, 
+						{image : 'AsM5.bmp'}]
+	
+
+				}, 
+				{
+					nameForFeedback : 'White people',  //Will be used in the user feedback 
+					nameForLogging : 'White people', //Will be used in the logging
+					//An array of all media objects for this category.
+					mediaArray : [
+					    {image : 'WhFAs1.bmp'}, 
+						{image : 'WhFAs2.bmp'}, 
+						{image : 'WhFAs3.bmp'}, 
+						{image : 'WhFAs4.bmp'}, 
+						{image : 'WhFAs5.bmp'}, 
+						{image : 'WhMAs1.bmp'}, 
+						{image : 'WhMAs2.bmp'}, 
+						{image : 'WhMAs3.bmp'}, 
+						{image : 'WhMAs4.bmp'}, 
+						{image : 'WhMAs5.bmp'}]
+				}
+			],
+	
+
+			examplePrimeStimulus : 
+			{
+				nameForLogging : 'examplePrime', //Will be used in the logging
+				//An array of all media objects for this category.
+				mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
+			},
+	
+
+			base_url : {//Where are your images at?
+				image : 'https://satchmo496.github.io/images/'
+			}
+		});
+	});
